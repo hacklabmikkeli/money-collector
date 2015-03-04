@@ -1,0 +1,14 @@
+{
+  "name": "MoneyCollector",
+  "version": "0.0.0",
+  "description": "MoneyCollector",
+  "main": "app.js",
+  "author": {
+    "name": "Belvain",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*"
+  }
+}
