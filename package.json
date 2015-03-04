@@ -9,6 +9,12 @@
   },
   "dependencies": {
     "express": "*",
-    "jade": "*"
+    "jade": "*",
+    "mongoose": "*",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "express-session": "*",
+    "passport": "*",
+    "passport-facebook": "*"
   }
 }
