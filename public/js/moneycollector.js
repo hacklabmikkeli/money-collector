@@ -21,7 +21,6 @@
   }
   
   function labelFormatter(label, series) {
-    console.log(series);
     return "<div style='font-size:12pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" +series.data[0][1] + "€</div>";
   }
 

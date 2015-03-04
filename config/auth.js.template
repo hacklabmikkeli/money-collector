@@ -1,0 +1,5 @@
+﻿module.exports = {
+  "clientID": "YOUR_FACEBOOK_CLIENT_ID",
+  "clientSecret": "YOUR_FACEBOOK_CLIENT_SECRET",
+  "callbackURL" : "AUTHORIZED_CALLBACK_URL"
+};
