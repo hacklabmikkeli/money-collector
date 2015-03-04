@@ -1,4 +1,25 @@
 ﻿extends layout
 
 block content
-  p Welcome #{user.name}
+  p Olet kirjautunut henkilönä: #{user.name}
+  p Sitoudun maksamaan Hacklabin tilankäyttömaksua:&nbsp;
+    input(id='amount-to-pay' type='number' value=user.money)
+    | &nbsp;€ / kk
+  p
+    a(href='/logout') Kirjaudu ulos
+  hr
+  br
+  .flotContainer
+    div(id='graph-container-element')
+  br
+  hr
+  .statistics
+    p
+      span(id='total-users')
+      | &nbsp;käyttäjää on sitoutunut maksamaan tilasta.
+    p Keskimääräinen käyttömaksu:&nbsp;
+      span(id='avg-payment')
+      | &nbsp;€ / kk
+  script(src='/lib/jquery.flot.min.js')
+  script(src='/lib/jquery.flot.pie.min.js')
+  script(src='/js/moneycollector.js')

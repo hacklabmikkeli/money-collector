@@ -24,7 +24,7 @@ module.exports = function (passport) {
 
     process.nextTick(function () {
 
-      User.findOne({ 'id' : profile.id }, function (err, user) {
+      User.findOne({ 'facebook_id' : profile.id }, function (err, user) {
 
         if (err) return done(err);
 

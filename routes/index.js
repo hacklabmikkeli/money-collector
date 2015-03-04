@@ -1,4 +1,5 @@
 ﻿var common = require('./components/common');
+var api = require('./components/api');
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated())
@@ -22,5 +23,10 @@ module.exports = function (app, passport) {
     successRedirect : '/',
     failureRedirect : '/login'
   }));
+
+  /** Api **/
+  
+  app.get('/total', isLoggedIn, api.totalMoney);
+  app.post('/value', isLoggedIn, api.updateValue);
 
 };

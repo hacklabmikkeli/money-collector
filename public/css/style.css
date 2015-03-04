@@ -1,0 +1,9 @@
+﻿body {
+}
+.flotContainer {
+    margin-left:auto;
+    margin-right:auto;
+}
+#graph-container-element {
+    height:500px;
+}
